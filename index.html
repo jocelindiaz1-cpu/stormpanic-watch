@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stormpanic Watch</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #101411;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 20px;
+  text-align: center;
+  background: #171f19;
+  border-bottom: 2px solid #53e58b;
+}
+header h1 {
+  margin: 0;
+  color: #53e58b;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+  padding: 20px;
+}
+iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+.video {
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+.chat {
+  height: 600px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>STORMPANIC WATCH</h1>
+  <p>Disfruta del directo en vivo</p>
+</header>
+<main>
+  <section>
+    <iframe
+      class="video"
+      src="https://player.kick.com/Stormpanic"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section>
+    <iframe
+      class="chat"
+      src="https://kick.com/Stormpanic/chatroom">
+    </iframe>
+  </section>
+</main>
+
+</body>
+</html>
